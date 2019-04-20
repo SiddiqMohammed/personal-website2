@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -37,7 +41,6 @@ th, td {
 }
 
 .space {
-  padding-top: 50px;
   /* line-height: .0000001em; */
   text-align: center;
   bottom: 0px;
@@ -60,7 +63,6 @@ th, td {
   width: 3%;
   height: 3%;
 }
-
 
 #third {
   padding: 20px 0 20px 65px;
@@ -183,7 +185,7 @@ th, td {
 	width:33.3%;
 	/* border:1px solid #ccc; */
 	padding:10px;
-	box-sizing:border-box;
+	box-sizing: border-box;
   margin-bottom: 15px;
   color: #fff;
 }
