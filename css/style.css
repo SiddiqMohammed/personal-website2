@@ -70,59 +70,13 @@ th, td {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
-.container2{
-	width:80%;
-	margin:auto;
-	overflow:hidden;
-}
+
 
 .container{
 	width:80%;
 	margin:auto;
 	overflow:hidden;
 }
-
-/* #main-header{
-	background-color:coral;
-	color:#fff;
-} */
-
-/* #navbar{
-	background-color:#333;
-	color:#fff;
-} */
-
-/* #main-text h1{
-	margin-top: 500px;
-} */
-
-
-/* /////* */
-/* #navbar ul{
-  margin-top: 50px;
-	padding:0;
-	list-style: none;
-}
-
-#navbar li{
-	display:inline;
-  float: left;
-}
-
-#navbar a{
-	color:#fff;
-	text-decoration: none;
-	font-size:1.25vw;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-	padding-right:50px;
-  text-align: right;
-
-} */
-
-/* #single-nav {
-  float: right;
-} */
 
 .navbar{
   font-family: 'Roboto', sans-serif;
@@ -246,7 +200,7 @@ th, td {
   font-family: 'Roboto', sans-serif;
   font-weight: 150;
   font-size: 1rem;
-  
+
 }
 
 /* THE THIRD SECTION STARTS HERE */
