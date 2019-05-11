@@ -15,7 +15,7 @@ body{
 	background-color:#f4f4f4;
 	color:#555;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:1.6rem;
 	line-height:1.6em;
 	margin:0;
 }
@@ -96,7 +96,9 @@ th, td {
 	margin-top: 500px;
 } */
 
-#navbar ul{
+
+/* /////* */
+/* #navbar ul{
   margin-top: 50px;
 	padding:0;
 	list-style: none;
@@ -116,11 +118,33 @@ th, td {
 	padding-right:50px;
   text-align: right;
 
-}
+} */
 
 /* #single-nav {
   float: right;
 } */
+
+.navbar{
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+
+/* this is the right margin splitter */
+.navbar-collapse {
+  justify-content: flex-end;
+}
 
 #showcase{
 	background-image:url('../images/showcaseg.jpg');
@@ -157,7 +181,6 @@ th, td {
   padding-top: 50px;
   background-color: #191919;
   text-decoration-color: white;
-  height: 100%;
 }
 
 .sectionHeading h1{
@@ -166,7 +189,7 @@ th, td {
   letter-spacing: .5em;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 
 }
 
@@ -202,6 +225,28 @@ th, td {
   font-weight: 700;
   text-align: left;
   padding: 0 75px 0 15px;
+}
+
+.features{
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title{
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.features ul{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 150;
+  font-size: 1rem;
+  
 }
 
 /* THE THIRD SECTION STARTS HERE */
@@ -284,6 +329,17 @@ th, td {
   bottom: 0;
     /* position: absolute; */
 	text-align: center;
+}
+
+.page-footer{
+  background-color: #222;
+  color: #ccc;
+  padding: 5px 0 5px;
+}
+
+.footer-copyright{
+  color: #fff;
+  padding: 5px 0;
 }
 
 #myBtn {

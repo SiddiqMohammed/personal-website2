@@ -7,12 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
 	<script src="scripts/lightbox-plus-jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<!-- <header id="main-header">
 		<div class="container">
 			<h1>My Website</h1>
@@ -33,25 +37,34 @@
 	<section id="showcase">
 		<div class="container">
 			<div class="main-text">
-				<div class="navigation-bar">
-					<nav id="navbar">
-		    			<ul>
-								<li><a href="SiddiqMohammed.com">SiddiqMohammed</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#services">Services</a></li>
-		    			</ul>
-							<div class="single-nav">
-								<ul>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</div>
-		    	</nav>
-				</div>
+				<nav class="navbar navbar-expand-md">
+					<a class="navbar-brand" href="SiddiqMohammed.com">SiddiqMohammed</a>
+					<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="main-navigation">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<header class="page-header header container-fluid">
+					<h1> <a href="#recentProjects">Programmer</a>, <a href="#recentProjects">Engineer</a>, <a href="#services">Photographer</a>.
+					</h1>
+				</header>
 
 				<!-- <h1>Self made millionaire status. Used to only eat at Shonies on occasions.
 				</h1> -->
-				<h1> <a href="#recentProjects">Programmer</a>, <a href="#recentProjects">Engineer</a>, <a href="#services">Photographer</a>.
-				</h1>
+
 	      <!-- <p>Click here to go down</p> -->
 				<div class="space">
 					<a href="#about">Click Here To Go Down</a> <h6></h6>
@@ -71,29 +84,32 @@
 			<section id="main-block">
 				<p>I'm a super curious person and like to dab into anything and everything that I find interesting. A Mechanical Engineer by profession, and a part-time software and electronics tinkerer. I've worked with many softwares and hardware components in my quest of knowledge. Apart from that, I'm also a Photographer with a wide portfolio.</p>
 			</section>
-	    <div class="block">
-				<h3>Software Development</h3>
-				<ul>
-					<li>Python automation</li>
-					<li>IoT programming</li>
-					<li>Arduino and Raspberry Pi programming </li>
-				</ul>
-			</div>
-			<div class="block">
-				<h3>Electronics</h3>
-				<ul>
-					<li>Gesture controlled RC Car</li>
-					<li>Auto Night Lights</li>
-					<li>Speed radar system</li>
-				</ul>
-			</div>
-			<div class="block">
-				<h3>Community</h3>
-				<ul>
-					<li>Open source projects on Github</li>
-					<li>Discord</li>
-					<li>Twitch [live coding and testing]</li>
-				</ul>
+			<div class="container features">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h3 class="feature-title">Software Development</h3>
+						<ul>
+					    <li>Python automation</li>
+					    <li>IoT programming</li>
+					    <li>Arduino and Raspberry Pi programming </li>
+					  </ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h3 class="feature-title">Electronics</h3>
+						<ul>
+					    <li>Gesture controlled RC Car</li>
+					    <li>Auto Night Lights</li>
+					    <li>Speed radar system</li>
+					  </ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h3 class="feature-title">Community</h3>
+						<ul>
+					    <li>Open source projects on Github</li>
+					    <li>Discord</li>
+					    <li>Twitch [live coding and testing]</li>
+					  </ul>
+				</div>
 			</div>
 			<div class="space">
 
@@ -177,8 +193,10 @@
  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	 <script src="scripts/test.js"></script>
 
-	<footer id="main-footer">
-		<p>Copyright &copy; 2019 Siddiq Mohammed</p>
+	<footer class="page-footer">
+		<div class="container">
+			  <div class="footer-copyright text-center">© 2019 Copyright: SiddiqMohammed.com</div>
+		</div>
 	</footer>
 </body>
 </html>
